@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_news_app/modules/search/search_screen.dart';
 
 Widget buildNewsItem({
   required news,
@@ -55,3 +56,7 @@ Widget buildDivider()=>Padding(
     color: Colors.grey[300],
   ),
 );
+
+void navigateTo(BuildContext context,Widget widget)=>Navigator.push(context,
+    MaterialPageRoute(builder:(context)=>widget
+    ));
